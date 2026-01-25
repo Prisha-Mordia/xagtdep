@@ -9,7 +9,7 @@ using namespace llvm;
 using namespace dagtdep;
 
 // Implementation of the Pass run method
-PreservedAnalyses FunctionTransformPass::run(Function &F, FunctionAnalysisManager &AM) {
+PreservedAnalyses FunctionTransformPass::run(llvm::Function &F, FunctionAnalysisManager &AM) {
     errs() << "Running Function Transform Pass on function: " << F.getName() << "\n";
     
     // Perform function transformation
@@ -21,12 +21,12 @@ PreservedAnalyses FunctionTransformPass::run(Function &F, FunctionAnalysisManage
 }
 
 // Implementation of legacy methods
-void Function::execute() {
+void dagtdep::Function::execute() {
     // Implementation for function transformation
     errs() << "Executing Function transformation\n";
 }
 
-void Function::registerPass() {
+void dagtdep::Function::registerPass() {
     // Registration logic for the pass
     errs() << "Function Transform Pass registered\n";
 }

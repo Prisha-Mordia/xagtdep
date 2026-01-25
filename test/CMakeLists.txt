@@ -11,7 +11,7 @@ llvm_map_components_to_libnames(llvm_libs core support)
 # Helper function to create test executables
 function(add_module_test test_name module_name)
     add_executable(${test_name} ${test_name}.cpp)
-    target_link_libraries(${test_name} ${llvm_libs})
+    target_link_libraries(${test_name} ${module_name}Obj ${llvm_libs})
     target_include_directories(${test_name} PRIVATE
         ${CMAKE_SOURCE_DIR}/include
         ${CMAKE_SOURCE_DIR}/src/${module_name}
