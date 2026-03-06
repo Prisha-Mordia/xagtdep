@@ -6,7 +6,7 @@
 #include "llvm/IR/PassManager.h"
 #include "llvm/Pass.h"
 
-namespace dagtdep {
+namespace xagtdep {
 
 // Function Pass for LLVM
 class FunctionTransformPass : public llvm::PassInfoMixin<FunctionTransformPass> {
@@ -27,6 +27,6 @@ public:
     static const char* getPassDescription() { return "Function Transformation Pass"; }
 };
 
-} // namespace dagtdep
+} // namespace xagtdep
 
 #endif // FUNCTION_H

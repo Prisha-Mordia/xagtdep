@@ -7,7 +7,7 @@
 #include <caterpillar/synthesis/strategies/action.hpp>
 #include <mockturtle/networks/xag.hpp>
 
-namespace dagtdep {
+namespace xagtdep {
 
 using xag_steps_t =
     std::vector<std::pair<mockturtle::xag_network::node,
@@ -24,6 +24,6 @@ struct XagContext {
   xag_steps_t steps;
 };
 
-} // namespace dagtdep
+} // namespace xagtdep
 
 #endif // XAGCONTEXT_H

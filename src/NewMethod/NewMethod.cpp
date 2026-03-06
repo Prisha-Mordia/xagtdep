@@ -6,7 +6,7 @@
 #include "llvm/Support/raw_ostream.h"
 
 using namespace llvm;
-using namespace dagtdep;
+using namespace xagtdep;
 
 // Required: define the AnalysisKey
 AnalysisKey NewMethodAnalysis::Key;

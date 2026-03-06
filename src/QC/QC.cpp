@@ -7,7 +7,7 @@
 #include "llvm/Support/raw_ostream.h"
 
 using namespace llvm;
-using namespace dagtdep;
+using namespace xagtdep;
 
 // ── Core algorithm ────────────────────────────────────────────────────────
 // Consume the optimized XagContext and synthesize a quantum circuit.

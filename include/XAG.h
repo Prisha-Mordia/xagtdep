@@ -7,7 +7,7 @@
 #include "llvm/IR/PassManager.h"
 #include "llvm/Pass.h"
 
-namespace dagtdep {
+namespace xagtdep {
 
 /// Core algorithm class: runs caterpillar's T-depth optimization strategy
 /// on the xag_network inside XagContext.
@@ -27,6 +27,6 @@ public:
   static bool isRequired() { return true; }
 };
 
-} // namespace dagtdep
+} // namespace xagtdep
 
 #endif // XAG_H

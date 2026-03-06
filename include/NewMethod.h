@@ -8,7 +8,7 @@
 #include "llvm/IR/PassManager.h"
 #include "llvm/Pass.h"
 
-namespace dagtdep {
+namespace xagtdep {
 
 /// Core algorithm class: builds a mockturtle::xag_network from an LLVM
 /// Function. This is what the test (NewMethodTest) exercises directly.
@@ -43,6 +43,6 @@ public:
   static bool isRequired() { return true; }
 };
 
-} // namespace dagtdep
+} // namespace xagtdep
 
 #endif // NEWMETHOD_H

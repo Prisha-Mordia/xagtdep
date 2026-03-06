@@ -8,7 +8,7 @@
 #include <caterpillar/synthesis/strategies/xag_mapping_strategy.hpp>
 
 using namespace llvm;
-using namespace dagtdep;
+using namespace xagtdep;
 
 // ── Core algorithm ────────────────────────────────────────────────────────
 // Run caterpillar's T-depth minimization strategy on ctx.xag.

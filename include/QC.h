@@ -7,7 +7,7 @@
 #include "llvm/IR/PassManager.h"
 #include "llvm/Pass.h"
 
-namespace dagtdep {
+namespace xagtdep {
 
 /// Core algorithm class: consumes the XagContext produced by XAGPass
 /// and synthesizes a quantum circuit.
@@ -31,6 +31,6 @@ public:
   static bool isRequired() { return true; }
 };
 
-} // namespace dagtdep
+} // namespace xagtdep
 
 #endif // QC_H

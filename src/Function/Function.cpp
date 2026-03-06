@@ -6,14 +6,14 @@
 #include "llvm/Passes/PassPlugin.h"
 
 using namespace llvm;
-using namespace dagtdep;
+using namespace xagtdep;
 
 // Implementation of the Pass run method
 PreservedAnalyses FunctionTransformPass::run(llvm::Function &F, FunctionAnalysisManager &AM) {
     errs() << "Running Function Transform Pass on function: " << F.getName() << "\n";
     
     // Perform function transformation
-    dagtdep::Function transformer;
+    xagtdep::Function transformer;
     transformer.execute();
     
     // Indicate that all analyses are preserved (this is an analysis pass)
@@ -21,12 +21,12 @@ PreservedAnalyses FunctionTransformPass::run(llvm::Function &F, FunctionAnalysis
 }
 
 // Implementation of legacy methods
-void dagtdep::Function::execute() {
+void xagtdep::Function::execute() {
     // Implementation for function transformation
     errs() << "Executing Function transformation\n";
 }
 
-void dagtdep::Function::registerPass() {
+void xagtdep::Function::registerPass() {
     // Registration logic for the pass
     errs() << "Function Transform Pass registered\n";
 }

@@ -6,7 +6,7 @@
 #include "llvm/IR/PassManager.h"
 #include "llvm/Pass.h"
 
-namespace dagtdep {
+namespace xagtdep {
 
 // DavioDecomposition Pass for LLVM
 class DavioDecompositionPass : public llvm::PassInfoMixin<DavioDecompositionPass> {
@@ -27,6 +27,6 @@ public:
     static const char* getPassDescription() { return "Davio Decomposition Analysis Pass"; }
 };
 
-} // namespace dagtdep
+} // namespace xagtdep
 
 #endif // DAVIODECOMPOSITION_H
