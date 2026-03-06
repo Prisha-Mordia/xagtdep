@@ -1,6 +1,6 @@
 # LLVM Pass Integration Guide
 
-This document describes how each submodule in the `dagtdep` repository has been extended with LLVM Pass infrastructure.
+This document describes how each submodule in the `xagtdep` repository has been extended with LLVM Pass infrastructure.
 
 ## Overview
 
@@ -91,7 +91,7 @@ You can also use these passes programmatically in your own LLVM-based tools:
 #include "DavioDecomposition.h"
 
 using namespace llvm;
-using namespace dagtdep;
+using namespace xagtdep;
 
 // In your analysis pipeline
 FunctionPassManager FPM;
@@ -115,7 +115,7 @@ Each module exposes the following API:
 
 ### C++ API
 ```cpp
-namespace dagtdep {
+namespace xagtdep {
     // Pass class for new pass manager
     class XYZPass : public llvm::PassInfoMixin<XYZPass> {
         llvm::PreservedAnalyses run(llvm::Function &F, 
@@ -164,7 +164,7 @@ cd build
 All modules follow LLVM coding standards:
 
 1. **Naming**: CamelCase for classes, methods
-2. **Namespacing**: All classes in `dagtdep` namespace
+2. **Namespacing**: All classes in `xagtdep` namespace
 3. **Documentation**: Inline comments for complex logic
 4. **Error Handling**: Uses LLVM's error handling mechanisms
 5. **Memory Management**: LLVM-style memory management
@@ -224,4 +224,4 @@ When extending these passes:
 
 ## License
 
-Follows the same license as the parent dagtdep project.
+Follows the same license as the parent xagtdep project.

@@ -6,7 +6,7 @@
 #include "llvm/Passes/PassPlugin.h"
 
 using namespace llvm;
-using namespace dagtdep;
+using namespace xagtdep;
 
 // Implementation of the Pass run method
 PreservedAnalyses DavioDecompositionPass::run(Function &F, FunctionAnalysisManager &AM) {

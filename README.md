@@ -1,4 +1,4 @@
-# dagtdep
+# xagtdep
 
 LLVM-integrated analysis and optimization modules for DAG-based transformations.
 
