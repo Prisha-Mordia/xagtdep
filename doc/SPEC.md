@@ -22,6 +22,11 @@ XAG for AND depth, which optimizes for T-depth. These are implemented in the [ca
 
 Inputs and Outputs from this module will be in mockturtle::xag_network format that caterpillar uses
 
+## QC
+
+Input is an XAG and output is a QASM file for a quantum circuit. Uses Qiskit to process quantum circuits.
+
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
